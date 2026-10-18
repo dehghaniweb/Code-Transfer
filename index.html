@@ -1,33 +1,25 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#123d7a">
-  <title>Code Transfer</title>
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23123d7a'/%3E%3Ctext x='32' y='41' font-size='28' text-anchor='middle' fill='white' font-family='Arial'%3E%3C/%3E%3C/svg%3E">
-  <style>
-    * { box-sizing: border-box; }
-    html, body { margin: 0; width: 100%; height: 100%; overflow: hidden; background: #fffef5; }
-    body { padding: 0; }
-    .frame-wrap { width: 100%; height: 100dvh; padding: 0; }
-    iframe { display: block; width: 100%; height: 100%; border: 0; background: white; }
-    .fallback { position: fixed; z-index: 2; left: 8px; right: 8px; bottom: 8px; padding: 8px; border-radius: 8px; background: rgba(18,61,122,.94); color: white; font: 13px Arial,sans-serif; text-align: center; }
-    .fallback a { color: #ffe45c; }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#123d7a">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%23123d7a'/%3E%3Cpath d='M8 8h22v22H8z' fill='%2300d4b8'/%3E%3Cpath d='M34 8h22v22H34z' fill='%23ffca3a'/%3E%3Cpath d='M8 34h22v22H8z' fill='%23ff6b6b'/%3E%3Cpath d='M34 34h22v22H34z' fill='%237c83ff'/%3E%3Cpath d='M15 19h9m-3-3 3 3-3 3M49 45h-9m3-3-3 3 3 3' fill='none' stroke='white' stroke-width='2.7' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<title>Code Transfer</title>
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;width:100%;height:100%;font-family:Arial,sans-serif;background:#f4f7fb;color:#123d7a}
+body{display:flex;flex-direction:column}
+.notice{flex:0 0 auto;padding:9px 12px;background:#123d7a;color:white;font-size:13px;line-height:1.45;text-align:center}
+.notice a{display:inline-block;margin-left:6px;padding:5px 9px;border-radius:6px;background:#ffe45c;color:#123d7a;font-weight:bold;text-decoration:none;white-space:nowrap}
+iframe{display:block;flex:1 1 auto;width:100%;height:0;min-height:0;border:0;background:white}
+</style>
 </head>
 <body>
-  <main class="frame-wrap">
-    <iframe
-      src="https://script.google.com/macros/s/AKfycbwpJISN-pYKb-fT6mlx8wJCC808Cak0EKbNJqK1QkGaJXkwJxhvBdysIZ1LKCEsIkO7/exec"
-      title="Code Transfer"
-      allow="clipboard-read; clipboard-write"
-      referrerpolicy="strict-origin-when-cross-origin"
-      loading="eager">
-    </iframe>
-  </main>
-  <noscript>
-    <p>Please enable JavaScript to use Code Transfer.</p>
-  </noscript>
+<div class="notice">
+  If the app below is blank, open Code Transfer directly:
+  <a href="https://script.google.com/macros/s/AKfycbwpJISN-pYKb-fT6mlx8wJCC808Cak0EKbNJqK1QkGaJXkwJxhvBdysIZ1LKCEsIkO7/exec" target="_blank" rel="noopener">Open app</a>
+</div>
+<iframe src="https://script.google.com/macros/s/AKfycbwpJISN-pYKb-fT6mlx8wJCC808Cak0EKbNJqK1QkGaJXkwJxhvBdysIZ1LKCEsIkO7/exec" title="Code Transfer" allow="clipboard-read; clipboard-write" loading="eager"></iframe>
 </body>
 </html>
