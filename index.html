@@ -10,14 +10,14 @@
 *{box-sizing:border-box}
 html,body{margin:0;width:100%;height:100%;font-family:Arial,sans-serif;background:#f4f7fb;color:#123d7a}
 body{display:flex;flex-direction:column}
-.notice{flex:0 0 auto;padding:9px 12px;background:#123d7a;color:white;font-size:13px;line-height:1.45;text-align:center}
-.notice a{display:inline-block;margin-left:6px;padding:5px 9px;border-radius:6px;background:#ffe45c;color:#123d7a;font-weight:bold;text-decoration:none;white-space:nowrap}
+.notice{flex:0 0 auto;display:flex;align-items:center;justify-content:center;flex-wrap:nowrap;gap:6px;padding:3px 8px;background:#123d7a;color:white;font-size:clamp(9px,calc((100vw - 42px) / 29.6),13px);line-height:1.2;white-space:nowrap;overflow:hidden}
+.notice a{flex:0 0 auto;padding:2px 8px;border-radius:5px;background:#ffe45c;color:#123d7a;font-weight:bold;text-decoration:none;white-space:nowrap}
 iframe{display:block;flex:1 1 auto;width:100%;height:0;min-height:0;border:0;background:white}
 </style>
 </head>
 <body>
 <div class="notice">
-  If the app below is blank, open Code Transfer directly:
+  <span>If the app below is blank, open Code Transfer directly:</span>
   <a href="https://script.google.com/macros/s/AKfycbwpJISN-pYKb-fT6mlx8wJCC808Cak0EKbNJqK1QkGaJXkwJxhvBdysIZ1LKCEsIkO7/exec" target="_blank" rel="noopener">Open app</a>
 </div>
 <iframe src="https://script.google.com/macros/s/AKfycbwpJISN-pYKb-fT6mlx8wJCC808Cak0EKbNJqK1QkGaJXkwJxhvBdysIZ1LKCEsIkO7/exec" title="Code Transfer" allow="clipboard-read; clipboard-write" loading="eager"></iframe>
